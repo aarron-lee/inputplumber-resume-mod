@@ -1,0 +1,11 @@
+[Unit]
+Description=run mods on resume
+After=suspend.target
+
+[Service]
+ExecStart=/usr/local/bin/resume-mods
+User=root
+
+[Install]
+WantedBy=suspend.target
+

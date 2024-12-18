@@ -1,0 +1,11 @@
+[Unit]
+Description=run mods on suspend
+Before=suspend.target
+
+[Service]
+ExecStart=/usr/local/bin/suspend-mods
+User=root
+
+[Install]
+WantedBy=suspend.target
+
